@@ -59,7 +59,7 @@ body {
     text-align: center;
     margin-top: 20px;
 }
-#digitalClock #clockContent {
+#digitalClock #clockContent,#digitalClock #dateContent {
     width: 20%;
     margin: 80px auto 0 auto;
     color: var(--font-color);
