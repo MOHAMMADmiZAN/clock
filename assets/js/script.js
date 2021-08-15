@@ -11,7 +11,7 @@ const clock = () => {
     seconds = seconds < 10 ? '0' + seconds : seconds
     let time = `${hours}:${minutes}:${seconds}${format}`
     // let time = date.toLocaleTimeString()
-    let dateLocal = date.toDateString()
+    let dateLocal = date.toLocalDateString()
     let clockContent = document.querySelector('#time')
     let dateContent = document.querySelector('#date')
     clockContent.innerText = time
