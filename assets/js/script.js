@@ -1,6 +1,6 @@
 let clockContent
 const clock = () => {
-    // let date = new Date()
+    let date = new Date()
     // let hours = date.getHours()
     // let minutes = date.getMinutes()
     // let seconds = date.getSeconds()
@@ -17,6 +17,7 @@ const clock = () => {
 
 
 }
+clock()
 let isTrue = true;
 let toggle = document.getElementById('toggle')
 toggle.addEventListener('click', (e) => {
