@@ -1,6 +1,6 @@
 let clockContent
 const clock = () => {
-    let date = new Date()
+    // let date = new Date()
     // let hours = date.getHours()
     // let minutes = date.getMinutes()
     // let seconds = date.getSeconds()
@@ -14,8 +14,9 @@ const clock = () => {
     clockContent = document.getElementById('time')
     clockContent.innerText = time;
     setInterval(clock, 1000)
-}
 
+
+}
 let isTrue = true;
 let toggle = document.getElementById('toggle')
 toggle.addEventListener('click', (e) => {
@@ -29,7 +30,5 @@ toggle.addEventListener('click', (e) => {
         toggle.innerText = 'Hide';
     }
     console.log(isTrue)
-  
-
 
 })
