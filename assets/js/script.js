@@ -1,4 +1,4 @@
-let clockContent
+
 const clock = () => {
     let date = new Date()
     // let hours = date.getHours()
@@ -10,8 +10,9 @@ const clock = () => {
     // minutes = minutes < 10 ? '0' + minutes : minutes
     // seconds = seconds < 10 ? '0' + seconds : seconds
     // let time = `${hours}:${minutes}:${seconds}${format}`
+
     let time = date.toLocaleTimeString()
-    clockContent = document.getElementById('time')
+    let clockContent = document.getElementById('time')
     clockContent.innerText = time;
     setInterval(clock, 1000)
 
@@ -19,15 +20,16 @@ const clock = () => {
 }
 clock()
 let isTrue = true;
+let clockDiv = document.getElementById('clockContent')
 let toggle = document.getElementById('toggle')
 toggle.addEventListener('click', (e) => {
     e.preventDefault()
     isTrue =!isTrue;
     if (isTrue===false) {
-        clockContent.style.visibility = "hidden";
+        clockDiv.style.visibility = "hidden";
         toggle.innerText = 'Show';
     }else{
-        clockContent.style.visibility = "visible";
+        clockDiv.style.visibility = "visible";
         toggle.innerText = 'Hide';
     }
     console.log(isTrue)
