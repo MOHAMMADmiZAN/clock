@@ -29,7 +29,7 @@ toggle.addEventListener('click', (e) => {
         toggle.innerText = 'Hide';
     }
     console.log(isTrue)
-    
+  
 
 
 })
