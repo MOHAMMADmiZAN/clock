@@ -32,6 +32,7 @@ toggle.addEventListener('click', (e) => {
     clockDiv.style.visibility = "visible";
     toggle.innerText = 'Hide';
   }
-  console.log(isTrue)
+   console.log(isTrue);
+   console.dir(toggle.innerText);
 
 })
